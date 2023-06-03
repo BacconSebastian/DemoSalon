@@ -1,0 +1,235 @@
+.informacion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8rem 2rem 4rem 2rem;
+
+  .experience-icon {
+    width: 20vw;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 4px #50b5d7);
+    filter: drop-shadow(0 0 100px rgb(80, 181, 215));
+  }
+
+  .informacion-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+    .experience {
+      position: sticky;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      scroll-snap-align: center;
+      margin-right: 4rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      z-index: 1;
+
+      h2 {
+        font-weight: 900;
+        color: #FF4500;
+        text-align: center;
+        filter: drop-shadow(0 0 0 #FFFFFF);
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 80vw;
+        height: 200px;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        z-index: 1;
+      }
+
+      .description {
+        margin: 1rem;
+        margin-top: .5rem;
+        font-weight: 300;
+
+        span {
+          font-weight: 600;
+          color: #FF4500;
+        }
+      }
+
+      .right-icons {
+        position: absolute;
+        right: 1rem;
+        top: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+
+        .redirect {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          margin-left: 1rem;
+          box-sizing: border-box;
+          cursor: pointer;
+          z-index: 2;
+        }
+
+        .first-tech {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          box-sizing: border-box;
+          margin-right: 1rem;
+        }
+  
+        .second-tech {
+          background-color: #50b5d7;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: .5rem;
+          box-sizing: border-box;
+          filter: brightness(100%);
+        }
+
+        .next {
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          box-sizing: border-box;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .experience:last-child {
+      margin-right: 0;
+    }
+
+    .right-pointer {
+      position: absolute;
+      right: 2rem;
+      top: 26rem;
+      z-index: 4;
+      animation: swipe 3s infinite;
+    }
+  }
+
+  .informacion-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .informacion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8rem 2rem 4rem 2rem;
+  
+    .experience-icon {
+      width: 20vw;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 4px #50b5d7);
+      filter: drop-shadow(0 0 100px rgb(80, 181, 215));
+    }
+  
+    .informacion-container {
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+      scroll-snap-type: none;    
+      width: 100%;
+  
+      .experience {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 6rem;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        z-index: 1;
+  
+        img {
+          width: 50vw;
+          height: 280px;
+        }
+  
+        .description {
+          font-size: 1rem;
+          align-self: flex-start;
+          padding-top: 4rem;
+        }
+  
+        .right-icons {
+          flex-direction: column-reverse;
+          left: 0rem;
+          top: 5rem;
+          width: -moz-fit-content;
+          width: fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+
+          .redirect {
+            margin: 0;
+            margin-bottom: .8rem;
+          }
+  
+          .first-tech {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+          
+          .second-tech {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+          
+          .next {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .experience:last-child {
+        margin-bottom: 0;
+      }
+  
+      .right-pointer {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes swipe {
+  0% {
+    padding-right: 0;
+  }
+  
+  50% {
+    padding-right: 1rem;
+  }
+  
+  100% {
+    padding-right: 0;
+  }
+}
