@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem 2rem 2rem;
 
   .profile {
     width: 90%;
+    max-width: 400px;
     margin-bottom: 2rem;
     border-radius: 10px;
   
@@ -55,35 +55,53 @@
 }
 
 @media (min-width: 1024px) {
-  .home {
+  .nosotros {
+    padding: 6rem 8rem 4rem 8rem;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+
     .profile {
-      height: 20vh;
+      width: 300px;
     }
 
     .head-info {
+      margin-bottom: 1rem;
   
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
   
       h2 {
         padding-left: 1rem;
-        color: #50b5d7;
-        font-size: 2rem;
+        color: #00d800;
+        font-size: 1.5rem;
         font-weight: 900;
       }
     }
 
+    .left-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10rem;
+
+      .profile {
+        width: 500px;
+      }
+    }
+
     .description {
-      padding: 0 14rem;
-  
+      align-self: flex-start;
+      padding-top: 5rem;
+
       img {
         margin-right: 2rem;
         padding-left: 1rem;
       }
   
       p {
-        font-size: 1.5rem;
+        font-size: 1rem;
   
         span {
           font-weight: 600;
@@ -99,8 +117,8 @@
   }
   
   50% {
-    background-color: rgb(80, 181, 215, 10%);
-    box-shadow: 0 0 100px rgb(80, 181, 215, 30%);
+    background-color: hsla(120, 100%, 42%, 0.1);
+    box-shadow: 0 0 100px hsla(120, 100%, 42%, 0.25);
   }
 
   100% {

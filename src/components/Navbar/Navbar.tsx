@@ -15,11 +15,6 @@ const Navbar = () => {
     setClicked(true)
   }
 
-  useEffect(() => {
-    console.log("CLICKER: ", clicked)
-  }, [clicked])
-  
-
   return (
     <nav>
       <div className="brand-mark">
@@ -31,8 +26,9 @@ const Navbar = () => {
       <button className={expanded ? "close-expanded expanded" : "close-expanded"} onClick={() => handleExpand(false)}><CloseIcon /></button>
       
       <div className={expanded ? "nav-buttons expanded" : "nav-buttons"}>
+        <a href="#nosotros" onClick={() => {handleExpand(false)}} className="nav-button">Sobre HappyTime</a>
         <a href="#servicios" onClick={() => {handleExpand(false)}} className="nav-button">Servicios</a>
-        <a href="#sobre" onClick={() => {handleExpand(false)}} className="nav-button">Sobre HappyTime</a>
+        <a href="#informacion" onClick={() => {handleExpand(false)}} className="nav-button">Informacion</a>
         <a href="#contactanos" onClick={() => {handleExpand(false)}} className="nav-button">Contactanos</a>
       </div>
       {

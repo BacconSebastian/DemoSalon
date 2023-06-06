@@ -22,7 +22,7 @@ const Informacion = () => {
       <div className="informacion-container" id="scroll">
         <div className={"experience"}>
           <div className="left-side">
-            <h2 className="title">Fullstack Developer</h2>
+            <h2 className="title">Cumpleaños temático</h2>
             <img src={Cars} alt="" />
           </div>
           <p className="description">
@@ -31,7 +31,7 @@ const Informacion = () => {
         </div>
         <div className={"experience"}>
           <div className="left-side">
-            <h2 className="title">Cordial E-Commerce</h2>
+            <h2 className="title">Cumpleaños temático</h2>
             <img src={Cars} alt="" />
           </div>
           <p className="description">
@@ -40,7 +40,7 @@ const Informacion = () => {
         </div>
         <div className={"experience"}>
           <div className="left-side">
-            <h2 className="title">SMG Landing Page</h2>
+            <h2 className="title">Cumpleaños temático</h2>
             <img src={Cars} alt="" />
           </div>
           <p className="description">
@@ -49,7 +49,7 @@ const Informacion = () => {
         </div>
         <div className={"experience"}>
           <div className="left-side">
-            <h2 className="title">Virtual Office</h2>
+            <h2 className="title">Cumpleaños temático</h2>
             <img src={Cars} alt="" />
           </div>
           <p className="description">

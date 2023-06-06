@@ -5,10 +5,12 @@ import Salon from "../../assets/salon.jpg"
 const About = () => {
   return (
     <div id="nosotros" className="nosotros">
-      <img className="profile" src={Salon} alt="" />
-      <div className="head-info">
-        <h1>Happy Time!</h1>
-        <h2>Salon de cumpleaños</h2>
+      <div className="left-container">
+        <img className="profile" src={Salon} alt="" />
+        <div className="head-info">
+          <h1>Happy Time!</h1>
+          <h2>Salon de cumpleaños</h2>
+        </div>
       </div>
       <div className="description">
         <div className="icons-container">
